@@ -1,24 +1,44 @@
-
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
 venv/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and environment
 .env
+.env.*
+!.env.example
+
+# Local databases
 *.db
+*.sqlite
 *.sqlite3
+*.db-journal
 
 # Node
 node_modules/
 dist/
+.npm/
 
-# Environment files
-.env.*
-!.env.example
+# Caches
+.cache/
+.parcel-cache/
 
 # IDE
 .vscode/
 .idea/
+*.swp
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Logs
+*.log
